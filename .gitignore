@@ -1,0 +1,61 @@
+# Diretórios de build
+bin/
+obj/
+out/
+.env
+
+# Arquivos específicos do usuário
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Arquivos gerados pelo Mono
+mono_crash.*
+
+# Arquivos de cache do Windows
+Thumbs.db
+ehthumbs.db
+
+# Arquivos de configuração de pastas
+Desktop.ini
+
+# Lixeira usada em compartilhamentos de arquivos
+$RECYCLE.BIN/
+
+# Arquivos gerados pelo Visual Studio
+.vs/
+
+# Arquivos do NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Resultados de build de uma aplicação ASP.NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Configurações geradas automaticamente pelo VS Code
+.vscode/
+
+# Arquivos do JetBrains Rider
+.idea/
+*.sln.iml
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Arquivos específicos de IDEs
+*.dbmdl
+*.log
+*.tlog
+*.ide.*
+*.DotSettings.user

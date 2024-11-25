@@ -1,0 +1,6 @@
+@Parky_backend_HostAddress = http://localhost:5042
+
+GET {{Parky_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
