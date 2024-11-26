@@ -1,0 +1,1 @@
+create database 'C:/DATABASE.FDB' page_size 8192 USER 'SYSDBA' PASSWORD 'masterkey' DEFAULT CHARACTER SET UTF8;

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Parky_backend.Models;
+using Parky_backend.Config;
 // dotnet ef migrations add MigrationName --output-dir Data/Migrations
 
 
@@ -23,20 +24,11 @@ namespace Parky_backend.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Fee>()
-                .HasKey(x => x.Id);
-
-            modelBuilder.Entity<ParkingRegistry>()
-                .HasKey(x => x.Id);
-
-            modelBuilder.Entity<ParkingSpace>()
-                .HasKey(x => x.Id);
-
-            modelBuilder.Entity<Vehicle>()
-                .HasKey(x => x.Id);
-
-            modelBuilder.Entity<VehicleType>()
-                .HasKey(x => x.Id);
+            modelBuilder.ApplyConfiguration(new ClientConfig());
+            modelBuilder.ApplyConfiguration(new VehicleTypeConfig());
+            modelBuilder.ApplyConfiguration(new FeeConfig());
+            modelBuilder.ApplyConfiguration(new ParkingSpaceConfig());
+            modelBuilder.ApplyConfiguration(new ParkingRegistryConfig());
 
             base.OnModelCreating(modelBuilder);
         }
